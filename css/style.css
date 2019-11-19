@@ -1,0 +1,205 @@
+html{
+  font-size:10px;
+  height:100%;
+}
+body{
+  font-family: Roboto,Roboto-Regular,sans-serif;
+  font-size:1.4rem;
+  color:#333;
+}
+a,a:hover{
+  color: #39b549;
+}
+
+h1,h2,h3,h4,.h1,.h2,.h3,.h4{
+  font-weight: 400;
+}
+.form-control[readonly="readonly"]{
+  background-color: #fff;
+}
+.text-success{
+  color:#2EAF73!important;
+}
+
+.fontThin{
+  font-weight: 100;
+}
+.fontLight{
+  font-weight: 300;
+}
+.fontbold{
+  font-weight: 500;
+}
+.fontbolder{
+  font-weight: 700;
+}
+
+/* === header styling === */
+.wishfinlogo {
+	height: 3.5rem;
+	width: 8.2rem;
+}
+.wishfinlogo .st1 {
+	fill: #FFF;
+}
+.wishfinlogo .st0 {
+	fill: #39B54A;
+}
+.wishfinlogo .st2 {
+	fill: grey;
+}
+/*form group css*/
+.form-group{
+  margin-bottom: 2.4rem;
+}
+.form-group label{
+  margin-bottom: 1.0rem;
+  color: #4D4F5C;
+}
+.form-control{
+  height: 5.0rem;
+  font-size:1.6rem;
+}
+select.form-control:not([size]):not([multiple]){
+  height:5.0rem;
+}
+
+.select-field{
+  position: relative;
+}
+.select-field select.form-control{
+  appearance:none;
+  -webkit-appearance:none;
+}
+.select-field .caret{
+  position: absolute;
+  top:2.5rem;
+  right:1.5rem;
+}
+.select-field .caret:before{
+  content:"";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #222;
+}
+.select-field .angledown{
+  position: absolute;
+  top:1.3rem;
+  right: 1.5rem;
+  font-size:1.6rem;
+  color:#666;
+}
+.select-field .angledown:before{
+  content: "\f107";
+  font-family: fontawesome;
+}
+.button-area .btn{
+  font-size:1.6rem;
+  min-width: 18.5rem;
+  height: 5.0rem;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+}
+.button-area .btn.btn-success{
+  background-color: #00C569;
+  border-color:#00C569;
+}
+
+
+/*card css*/
+.card{
+  box-shadow: 0 1px 20px rgba(212, 212, 226, 0.64);
+}
+.card .card-header,.card .card-body{
+  padding-left:3.0rem;
+  padding-right:3.0rem;
+}
+.card .card-body{
+  padding-top:3.0rem;
+  padding-bottom:3.0rem;
+}
+
+.modal-header, .modal-body, .modal-footer{
+  padding-left:3.0rem;
+  padding-right: 3.0rem;
+  padding-top:2.4rem;
+  padding-bottom:2.4rem;
+}
+
+/*table css*/
+.table th, .table td{
+	padding:1.5rem;
+	white-space: nowrap;
+}
+
+.table-borderless thead th{
+	background-color: #f3f3f5;
+	font-weight: 400;
+	border: 0 none;
+	vertical-align: middle;
+}
+.table-borderless thead th:first-child{
+		border-radius:0.3rem 0 0 0.3rem;
+}
+.table-borderless thead th:last-child{
+		border-radius:0 0.3rem 0.3rem 0;
+}
+.table-borderless tbody tr:first-child td{
+		border-top: 0 none;
+}
+
+/*material design in form-group*/
+.form-group.bmd label{
+	margin-bottom: 0;
+}
+.form-group.bmd .form-control{
+	border:0 none;
+	height: 3.8rem;
+	font-size:1.6rem;
+	padding-left:0;
+	padding-right: 0;
+	background: no-repeat center bottom, center calc(100% - 1px);
+	background-image: linear-gradient(to top, #00c569 2px, rgba(0, 150, 136, 0) 2px), linear-gradient(to top, rgba(0, 0, 0, 0.26) 1px, transparent 1px);
+	background-size: 0 100%, 100% 100%;
+	transition: background 0s ease-out;
+}
+.form-group.bmd .form-control:focus{
+	background-color: transparent;
+	outline: none;
+  box-shadow:none;
+  background-image: linear-gradient(0deg,#00c569 2px,rgba(63,81,181,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
+  background-size: 100% 100%, 100% 100%;
+  transition-duration: 0.3s;
+}
+
+.form-group.bmd.has-error label{
+	color: #dc3545;
+}
+.form-group.bmd .form-control.is-invalid{
+	background-image: linear-gradient(0deg,#dc3545 2px,rgba(63,81,181,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
+  background-size: 100% 100%, 100% 100%;
+  transition-duration: 0.3s;
+}
+
+/* modal css */
+.modal-dialog.modal-large{
+max-width: 800px;
+
+}
+
+@media (min-width:1599px){
+  .container{
+    max-width: 1440px;
+  }
+}
+@media (max-width:767px){
+  .card .card-header,.card .card-body{
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+  }
+  .modal-header, .modal-body, .modal-footer{
+    padding:1.5rem;
+  }
+}

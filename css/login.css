@@ -1,0 +1,76 @@
+.wishfinlogo {
+	height: 5rem;
+	width: 12.0rem;
+}
+
+/*login wrapper*/
+.login-wrapper{
+  display: flex;
+}
+.login-wrapper-content{
+  width:100%;
+}
+.login-wrapper-row{
+  height:100vh;
+}
+.intro-col{
+  background:url('../images/fldg_login_img.jpg') no-repeat center left #F3F3F5;
+}
+.intro-col .site-logo{
+  position: relative;
+  top:10%;
+  left:7%;
+  display: inline-block;
+}
+
+.lead-col{
+  align-self: center;
+}
+
+/*login container*/
+.login-container{
+  max-width: 30.0rem;
+  margin:0 auto;
+}
+.login-container h2{
+  font-size:2.8rem;
+  font-weight: 500;
+  color:#333;
+  margin-bottom: 1.8rem;
+}
+.login-container p{
+  font-size:1.6rem;
+  color:#666;
+}
+.login-container form{
+  margin-top:6.4rem;
+}
+.login-container form .btn{
+  margin-top:4.0rem;
+}
+.login-container .form-group{
+	text-align: left;
+}
+
+@media (max-width:767px){
+  .wishfinlogo {
+  	height: 3.5rem;
+  	width: 8.2rem;
+  }
+  .intro-col{
+    background: none;
+  }
+  .login-wrapper-row{
+    display: block;
+  }
+  .intro-col .site-logo{
+    position: absolute;
+    top:1.5rem;
+    left:1.5rem;
+  }
+  .lead-col{
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+}
