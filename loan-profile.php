@@ -3,23 +3,20 @@
   if (isset($_SESSION['user_id']) == false) {
    header('Location:login.php');  
   }
-  include('db.php');
-  $customer_id = $_GET['id'];
+    include('db.php');
+   $customer_id = $_GET['id'];
 
-$query  = "select * from customer as c 
-left join customer_loan as cl on c.customer_id=cl.customer_id 
-where c.customer_id=$customer_id";
 
+$query  = "select * from customer where customer_id=". $customer_id;
 $result = $con->query($query);
 $profile_data  = array();
 if($result->num_rows){
    while($row = $result->fetch_assoc()){
-      $profile_data[] = $row;
+      $profile_data[] = $row;  
    }
 }
 
-$profile_data[0]['customer_id'];
-
+ 
 ?>
 
 <!doctype html>
